@@ -51,7 +51,11 @@ def menu():
 %s7.%s Find subdomains
 %s8.%s Reverse IP lookup
 %s9.%s Detect technologies
-%s0.%s All''' % (white, end, white, end, white, end, white, end, white, end, white, end, white, end, white, end, white, end, white, end))
+%s10.%s AS lookup
+%s11.%s Reverse DNS lookup
+%s12.%s MTR Traceroute
+%s13.%s Directory Buster
+%s0.%s All''' % (white, end, white, end, white, end, white, end, white, end, white, end, white, end, white, end, white, end, white, end, white, end, white, end, white, end, white, end))
 
 
 def dog(choice, target):

@@ -13,6 +13,10 @@ from plugins.honeypot import honeypot
 from plugins.detectCMS import detectCMS
 from plugins.censys import censys
 from plugins.reverseLookup import reverseLookup
+from plugins.asLookup import asLookup
+from plugins.reverseDNSLookup import reverseDNSLookup
+from plugins.mtrTraceroute import mtrTraceroute
+from plugins.dirbuster import dirbuster
 
 database = {
     '1': [censys, 'ip'],
@@ -23,7 +27,11 @@ database = {
     '6': [honeypot, 'ip'],
     '7': [findSubdomains, 'domain'],
     '8': [reverseLookup, 'ip'],
-    '9': [detectTech, 'url']
+    '9': [detectTech, 'url'],
+    '10': [asLookup, 'ip'],
+    '11': [reverseDNSLookup, 'ip'],
+    '12': [mtrTraceroute, 'ip'],
+    '13': [dirbuster, 'domain'],
 }
 
 if sys.version_info < (3, 0):
